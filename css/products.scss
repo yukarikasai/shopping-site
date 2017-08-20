@@ -1,0 +1,323 @@
+@import "compass";
+@charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+@mixin fontsize($size: 24, $base: 10){
+    font-size: $size + px;
+    font-size: ($size / $base) * 1rem;
+}
+
+$ja_font : 'Avenir','Helvetica Neue','Helvetica','Arial','メイリオ', Meiryo,'Hiragino Sans','ヒラギノ角ゴシック',YuGothic,'Yu Gothic','ＭＳ Ｐゴシック','MS PGothic';
+$base_color : #f9f8f6;
+$gray_dark : #887f69;
+$gray_light : #e2ddd4;
+$gray : #b0b0b0;
+$wine : #9d1a2d;
+
+.container {
+    padding: 0;}
+    
+body {
+    background: $base_color;
+    font-size: 1.25rem;
+    
+    img {
+            width : 100%;
+            max-width: 100%;
+            height: auto;
+    }
+}
+@media (max-width: 550px) {
+    body {
+        font-size: 1.2rem;
+    }
+}
+// base
+#products-main {
+    background-color: #ffffff;
+    box-sizing: border-box;
+    padding: 0 10px 15px 10px;
+    
+    hr {
+        border-top: 1px solid $gray;
+        margin-bottom: 1.5rem;
+        margin-top: 0.8rem;
+    }
+    
+    ul {
+        margin-bottom: 0;
+        @include display-flex;
+        -webkit-justify-content: space-between; /* Safari */
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+    
+    input {border-radius: 0;}
+        
+    #display_img {
+        width: 100%;
+    }
+    li {
+      list-style: none;
+      width: 19%;
+      margin-bottom: 0;
+    }
+    li img {
+      cursor: pointer;
+    }
+    
+    table, th, td {
+        border:1px solid $gray;
+    }
+    
+    table {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .check-color {
+        padding: 9px 5px;
+    }
+    
+    th {
+        background-color: $base_color;
+        font-weight: normal;
+    }
+    
+    th, td {
+        color: $gray_dark;
+        text-align: center;
+        padding: 4px 4px;
+    }
+    
+    td {
+       padding-top: 15px;
+    }
+    
+    #checkbox-btn {
+        margin-bottom: 0;
+        
+        }
+    
+    .price-container {
+        @include display-flex;
+        -webkit-flex-direction: row; /* Safari */
+        flex-direction: row;
+        margin-bottom: 1.3rem;
+        border-top: solid 1px $gray;
+        
+        input {
+        width: 58%;
+        margin-left: 5.0rem;
+        margin-bottom: 0;
+        margin-top: 1.2rem;
+        } 
+    }
+    
+    .price2 {
+        font-weight: bold;
+        font-style: oblique;
+        margin-left: 7.1rem;
+        margin-top: 1.1rem;
+        .price_red {
+            color: #e80f66;
+            font-size: 2.3rem;
+            margin-right: 0.5rem;
+        }
+    }
+    
+    .item-name {
+        font-size: 1.4rem;
+        padding: 15px 0 5px 0 ;
+    }
+    .item-name2 {
+        color: $gray;
+        font-size: 1.1rem;
+    }
+    
+    .images-title {
+        width: 30%;
+        margin-bottom: 1.2rem;
+    }
+    .images-title2 {
+        width: 15%;
+        padding-top: 10px;
+    }
+    .images-title3 {
+        width: 22%;
+        padding-top: 15px;
+    }
+    
+    #cart-btn {
+        border-top: solid 1px #b0b0b0;
+    }
+    .cart-brn {
+        margin: 0 auto;
+        width: 75%;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        
+    }//リスト
+    
+    .hr5 {
+        margin-bottom: 0.4rem;
+    }
+    .item-title {
+        color: $gray_dark;
+        margin-bottom: 1rem;
+    }
+    
+    .item-exp {
+        h5 {
+            color: $gray_dark;
+            margin-bottom: 1rem;
+            line-height: 1.3;
+            span {
+                font-size: 3rem;
+            }
+        }
+        p {
+                font-size: 1.4rem;
+        }
+    }
+    
+    .th2, .th3 {
+        padding: 20px 15px 15px 20px;
+        width: 28%;
+    }
+    
+    .td2 {
+        text-align: left;
+        padding: 6px 10px 5px 14px;;
+    }//商品説明
+}
+ 
+#products_box, .shopping_guide {
+    padding-right: 10px;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 550px){
+    
+    #products-main {
+        .images-title {
+            width: 30%;
+            margin-bottom: 1.1rem;
+        }
+        .images-title2 {
+            width: 14%;
+            padding-top: 22px;
+        }
+        .images-title3 {
+            width: 23%;
+            padding-top: 24px;
+        }
+        
+        .quanity-box {
+            margin-bottom: 0.7rem;
+        }
+    } 
+    #list_top,  {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    
+    .sp_guide {
+        img {
+            width: 80%;
+        }
+    }
+    #side_bar {
+        padding-right: 10px;
+        padding-left: 10px;
+        box-sizing: border-box;
+    }
+}
+//main-sp
+
+@media (min-width: 551px) {
+    #products_top {
+        @include display-flex;
+        -webkit-justify-content: space-between; /* Safari */
+         justify-content: space-between;
+    }
+    
+    h5 {
+        font-size: 2.0rem; 
+    }
+    
+    #products-main {
+        #display_img {
+        width: 71%;
+        }
+        
+        .item-name {
+        padding: 30px 0 20px 0}
+        
+        .item-name2 {
+            padding-top: 35px;
+        }
+        
+        .check-color {
+            padding: 15px 5px;
+        }
+        
+        #cart-btn {
+            border: none;
+            
+            
+            .cart-brn {
+                width: 100%;
+            }
+        }
+        .price-block {
+            border-bottom: solid 1px #b0b0b0; 
+        }
+        
+        #list_img {
+          width: 28%;
+        }
+        li {
+            width: 48%;
+        }
+        
+        .images-title {
+            width: 15%;
+            margin-bottom: 1.2rem;
+        }
+        .images-title2 {
+            width: 16%;
+            padding-top: 20px;
+        }
+        .images-title3 {
+            width: 22%;
+            padding-top: 28px;
+        }
+        
+        .quantity {
+             padding-top: 8px
+        }
+        .price-block {
+            @include display-flex;
+            -webkit-justify-content: space-between; /* Safari */
+            justify-content:  space-between;
+        }
+        .price-container {
+            width: 100%;
+        }
+        
+        .item-title {
+            margin-top: 30px;
+        }
+    } 
+    
+}//main-pc
+
+
+
+
+

@@ -1,0 +1,372 @@
+html {
+  font-size: 62.5%; }
+
+.container {
+  padding: 0 10px; }
+
+body {
+  background: #f9f8f6;
+  font-size: 1.25rem;
+  line-height: 1.5; }
+  body img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; }
+
+@media (max-width: 550px) {
+  body {
+    font-size: 1.2rem; } }
+@media (max-width: 550px) {
+  header #header_in {
+    padding-top: 15px;
+    padding-bottom: 8px; }
+  header #sp_logo {
+    margin: 0 auto;
+    width: 35%; }
+  header .sp_navi_icon {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    /* Safari */
+    justify-content: center;
+    margin-top: 5px;
+    margin-bottom: 0; }
+    header .sp_navi_icon li {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    header .sp_navi_icon #fb_icon, header .sp_navi_icon #insta_icon, header .sp_navi_icon #menu_icon {
+      margin-right: 6px;
+      margin-left: 6px;
+      width: 24px; }
+  header .sp_navi_li {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    position: absolute;
+    z-index: 10;
+    top: 90px;
+    right: 3%;
+    background: #544029;
+    display: none; }
+    header .sp_navi_li li {
+      width: 100%;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      color: #e2ddd4; }
+      header .sp_navi_li li a {
+        display: block;
+        padding: 8px 8px;
+        border-bottom: 1px solid #e2ddd4;
+        font-size: 15px;
+        color: #eee;
+        text-decoration: none; }
+      header .sp_navi_li li a:hover {
+        color: #00008b; }
+  header #pc_logo, header .pc_navi {
+    display: none; } }
+@media (min-width: 551px) {
+  header #header_in {
+    padding-top: 30px;
+    padding-bottom: 25px; }
+  header #sp_logo, header .sp_navi_icon, header .sp_navi_li {
+    display: none; }
+  header #pc_logo {
+    width: 142px; }
+  header .pc_navi {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: flex-end;
+    /* Safari */
+    justify-content: flex-end;
+    margin-bottom: 0;
+    padding-top: 20px; }
+    header .pc_navi li {
+      list-style: none;
+      margin: 0;
+      padding-right: 15px; }
+    header .pc_navi .navi_fb {
+      padding-right: 8px; } }
+
+.cover_area {
+  margin: 0;
+  padding: 0; }
+
+@media (max-width: 550px) {
+  #items h2 {
+    line-height: 0.7; }
+  #items .sp_new {
+    text-align: center; }
+    #items .sp_new #new_items_sp {
+      width: 30%; }
+  #items .item_container {
+    width: 100%;
+    margin-bottom: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    /* Safari */
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between; }
+    #items .item_container .item_box {
+      background: #ffffff;
+      width: 49.8%;
+      padding: 10px 10px 0 10px;
+      box-sizing: border-box;
+      margin-bottom: 1px; }
+      #items .item_container .item_box .item_image {
+        width: 100%; }
+      #items .item_container .item_box p {
+        font-size: 1.1rem;
+        margin-bottom: 1.1rem; }
+  #items .sp_popular {
+    text-align: center; }
+    #items .sp_popular #popular_items_sp {
+      width: 40%; }
+  #items .pc_new, #items .pc_popular {
+    display: none; }
+    #items .pc_new h2, #items .pc_popular h2 {
+      margin-bottom: 1.5rem; } }
+@media (min-width: 551px) {
+  #items .sp_new, #items .sp_popular {
+    display: none; }
+  #items .item_container {
+    margin-bottom: 15px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    /* Safari */
+    flex-wrap: wrap; }
+    #items .item_container .item_box {
+      width: 33%;
+      background: #ffffff;
+      padding: 15px 15px 5px 15px;
+      margin: 1px;
+      box-sizing: border-box; }
+      #items .item_container .item_box a {
+        display: block; }
+      #items .item_container .item_box #item_image {
+        width: 100%; }
+      #items .item_container .item_box p {
+        margin-bottom: 1.5rem; } }
+
+.shopping_guide #shipping_ban {
+  width: 175px; }
+.shopping_guide .sp_guide h2, .shopping_guide .pc_guide h2 {
+  line-height: 1.0; }
+.shopping_guide .guide_container {
+  width: 100%; }
+.shopping_guide .box_in {
+  padding: 15px 15px 0 20px;
+  box-sizing: border-box; }
+  .shopping_guide .box_in h5 {
+    font-size: 1.5rem;
+    color: #887f69;
+    font-weight: bold; }
+  .shopping_guide .box_in .ship {
+    margin-bottom: 1.5rem; }
+  .shopping_guide .box_in .pay {
+    margin-bottom: 0.5rem; }
+  .shopping_guide .box_in ul {
+    list-style-type: none;
+    margin-bottom: 0; }
+    .shopping_guide .box_in ul li {
+      color: #887f69;
+      margin-bottom: 0.2rem; }
+      .shopping_guide .box_in ul li span {
+        font-size: 2.1rem; }
+      .shopping_guide .box_in ul li p {
+        color: #222;
+        margin-bottom: 0; }
+      .shopping_guide .box_in ul li .guide_ls {
+        padding-bottom: 30px; }
+@media (max-width: 550px) {
+  .shopping_guide .pc_guide {
+    display: none; }
+  .shopping_guide .sp_guide {
+    text-align: center;
+    line-height: 0.6; }
+    .shopping_guide .sp_guide #guide_sp {
+      width: 44%; }
+  .shopping_guide .shipping_box, .shopping_guide .pay_box {
+    width: 100%;
+    background: #ffffff;
+    margin-bottom: 5px; } }
+@media (min-width: 551px) {
+  .shopping_guide .sp_guide {
+    display: none; }
+  .shopping_guide .guide_container {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justfy-content: center; }
+    .shopping_guide .guide_container .shipping_box, .shopping_guide .guide_container .pay_box {
+      width: 49%;
+      background: #ffffff;
+      margin-bottom: 70px; }
+    .shopping_guide .guide_container .shipping_box {
+      margin-left: 0;
+      margin-right: 2px; }
+    .shopping_guide .guide_container .pay_box {
+      margin-right: 0;
+      margin-left: 2px; } }
+
+#side_bar .search_box {
+  background-color: #ffffff; }
+  #side_bar .search_box .search {
+    text-align: center; }
+    @media (max-width: 550px) {
+      #side_bar .search_box .search {
+        margin-top: 1rem; } }
+    #side_bar .search_box .search .text_box {
+      width: 90%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      background-color: #e2ddd4;
+      background-image: url(../images/top/search_icon.png);
+      background-position: 95% center;
+      background-repeat: no-repeat;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      font-style: oblique;
+      color: #b0b0b0;
+      border: none; }
+  #side_bar .search_box form {
+    margin-bottom: 1.5rem; }
+#side_bar .pc_btn img {
+  width: 101px; }
+@media (max-width: 550px) {
+  #side_bar .itemserch {
+    display: none; }
+  #side_bar .container_about, #side_bar .container_info {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    /* Safari */
+    justify-content: space-between;
+    margin-bottom: 15px; }
+    #side_bar .container_about .boxin_image, #side_bar .container_info .boxin_image {
+      width: 140px;
+      padding: 12px 10px 10px 10px; }
+    #side_bar .container_about .boxin_info, #side_bar .container_info .boxin_info {
+      width: 140px;
+      padding: 10px 10px 10px 0px; }
+      #side_bar .container_about .boxin_info p, #side_bar .container_info .boxin_info p {
+        line-height: 1.5;
+        margin-bottom: 1.2rem; }
+  #side_bar .top_icon {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+    #side_bar .top_icon img {
+      width: 30%; } }
+#side_bar .rink_box {
+  margin-bottom: 10px; }
+  #side_bar .rink_box .page_rink {
+    display: inline-block;
+    width: 100%;
+    background-color: #887f69;
+    background-image: url(../images/top/next_icon.png);
+    background-position: 95% center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 14px 0 10px 14px;
+    font-weight: bold;
+    box-sizing: border-box; }
+#side_bar .categories ul {
+  margin-bottom: 1.5rem; }
+#side_bar .categories li {
+  list-style: none;
+  background-image: url(../images/top/next_icon_gray.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  margin-bottom: 2px; }
+  #side_bar .categories li a {
+    display: inline-block;
+    color: #222;
+    text-decoration: none;
+    padding: 12px 0 12px 15px; }
+#side_bar .categories .categories_title {
+  margin-bottom: 0;
+  background-image: url(../images/top/next_icon_under.png);
+  background-position: 95% center;
+  background-repeat: no-repeat;
+  background-color: #887f69; }
+  #side_bar .categories .categories_title a {
+    color: #ffffff;
+    font-weight: bold; }
+#side_bar .container_about, #side_bar .container_info {
+  background-color: #fff; }
+#side_bar .about a, #side_bar .shop_info a {
+  display: block;
+  width: 100%;
+  background-color: #887f69;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 0 12px 15px;
+  font-weight: bold;
+  box-sizing: border-box; }
+@media (min-width: 551px) {
+  #side_bar .search_box {
+    margin-top: 0; }
+    #side_bar .search_box .search .itemserch {
+      text-align: left;
+      padding: 20px 0 0 20px; }
+      #side_bar .search_box .search .itemserch img {
+        width: 87px; }
+    #side_bar .search_box .search .text_box {
+      width: 80%;
+      margin-top: 5px;
+      margin-bottom: 20px; } }
+
+hr {
+  border-top: 1px solid #887f69;
+  margin-top: 1.1rem;
+  margin-bottom: 2.0rem; }
+
+footer {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px; }
+  footer .privacy {
+    margin-bottom: 1rem;
+    font-size: 1.1rem; }
+  footer .copyright {
+    color: #b0b0b0;
+    font-size: 1.1rem; }
+
+@media (max-width: 550px) {
+  .pc_line {
+    display: none; } }
+@media (min-width: 551px) {
+  .column, .columns {
+    margin-left: 2%; }
+
+  .sp_line {
+    display: none; }
+
+  .container_about, .container_info {
+    margin-bottom: 15px; }
+    .container_about .boxin_image, .container_info .boxin_image {
+      padding: 10px 10px 0 10px; }
+    .container_about .boxin_info, .container_info .boxin_info {
+      padding: 5px 10px 10px 10px; }
+      .container_about .boxin_info p, .container_info .boxin_info p {
+        line-height: 1.5;
+        margin-bottom: 1.2rem; }
+    .container_about .pc_btn, .container_info .pc_btn {
+      text-align: center; }
+
+  .top_icon {
+    position: absolute;
+    bottom: 0%;
+    right: 0%; } }
+
+/*# sourceMappingURL=top.css.map */
